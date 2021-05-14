@@ -1,4 +1,4 @@
-COMPONENT=Challenge3AppC
+COMPONENT=KeepYourDistanceAppC
 #BUILD_EXTRA_DEPS = RadioCountMsg.py RadioCountMsg.class
 #CLEAN_EXTRA = RadioCountMsg.py RadioCountMsg.class RadioCountMsg.java
 

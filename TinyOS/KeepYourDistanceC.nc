@@ -2,7 +2,7 @@
 #include "Project1.h"
 #include "printf.h"
 
-module Project1 @safe() {
+module KeepYourDistanceC @safe() {
   uses {
     interface Leds;
     interface Boot;

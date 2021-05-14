@@ -1,5 +1,5 @@
-#ifndef PROJECT1_H
-#define PROJECT1_H
+#ifndef KEEPYOURDISTANCE_H
+#define KEEPYOURDISTANCE_H
 
 typedef nx_struct radio_count_msg {
   nx_uint16_t counter;

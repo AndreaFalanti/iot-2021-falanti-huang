@@ -1,11 +1,11 @@
 #define NEW_PRINTF_SEMANTICS
-#include "Project1.h"
+#include "KeepYourDistance.h"
 #include "printf.h"
 
-configuration Project1AppC { }
+configuration KeepYourDistanceAppC { }
 
 implementation {
-  components MainC, Project1C as App, LedsC;
+  components MainC, KeepYourDistanceC as App, LedsC;
   components new AMSenderC(AM_RADIO_COUNT_MSG);
   components new AMReceiverC(AM_RADIO_COUNT_MSG);
   components new TimerMilliC();
