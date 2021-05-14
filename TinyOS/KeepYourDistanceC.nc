@@ -1,5 +1,5 @@
 #include "Timer.h"
-#include "Project1.h"
+#include "KeepYourDistance.h"
 #include "printf.h"
 
 module KeepYourDistanceC @safe() {
