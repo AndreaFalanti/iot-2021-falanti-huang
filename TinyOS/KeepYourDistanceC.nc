@@ -2,6 +2,10 @@
 #include "KeepYourDistance.h"
 #include "printf.h"
 
+#include <stdarg.h>
+
+#define FREQ 500
+
 module KeepYourDistanceC @safe() {
   uses {
     interface Leds;
@@ -17,12 +21,22 @@ module KeepYourDistanceC @safe() {
 implementation {
     message_t packet;
 
-    bool locked;
+    bool locked = FALSE;
     uint16_t counter = 0;
-    bool led0_ON = 0;
-    bool led1_ON = 0;
-    bool led2_ON = 0;
-    double freq;
+
+    void format_string(char *fmt, va_list argptr, char *formatted_string);
+
+    void logMessage(const char *debug_ch, const char *fmt, ...) {
+        char formatted_string[255];
+
+        va_list argptr;
+        va_start(argptr,fmt);
+        format_string(fmt, argptr, formatted_string);
+        va_end(argptr);
+
+        printf("[%s] (ID: %u) %s\n", debug_ch, TOS_NODE_ID, formatted_string);
+        printfflush();
+    }
     
     event void Boot.booted() {
         call AMControl.start();
@@ -31,23 +45,8 @@ implementation {
     event void AMControl.startDone(error_t err) {
         
         if (err == SUCCESS) {
-            switch (TOS_NODE_ID) {
-            case 1: 
-                freq = 1000.0;
-                break;
-            case 2: 
-                freq = 1000.0/3;
-                break;
-            case 3: 
-                freq = 1000.0/5;
-                break;
-            default:
-                freq = 100000.0;
-                break;
-            }
-            //printf("Start timer of %f ms\n", freq);
-            //printfflush();
-            call MilliTimer.startPeriodic(freq);
+            call MilliTimer.startPeriodic(FREQ);
+            logMessage("Timer", "Started timer of %f ms", freq);
         }
         else {
             call AMControl.start();
@@ -63,59 +62,35 @@ implementation {
             return;
         }
         else {
-            radio_count_msg_t* rcm = (radio_count_msg_t*)call Packet.getPayload(&packet, sizeof(radio_count_msg_t));
+            radio_id_msg_t* rcm = (radio_id_msg_t*)call Packet.getPayload(&packet, sizeof(radio_id_msg_t));
             if (rcm == NULL) {
                 return;
             }
 
-            rcm->counter = counter;
             rcm->sender_id = TOS_NODE_ID;
-            if (call AMSend.send(AM_BROADCAST_ADDR, &packet, sizeof(radio_count_msg_t)) == SUCCESS) {
+            if (call AMSend.send(AM_BROADCAST_ADDR, &packet, sizeof(radio_id_msg_t)) == SUCCESS) {
                 locked = TRUE;
+                logMessage("Radio", "Broadcast message sent");
             }
         }
     }
 
     event message_t* Receive.receive(message_t* bufPtr, 
                     void* payload, uint8_t len) {
-        if (len != sizeof(radio_count_msg_t)) { 
+        if (len != sizeof(radio_id_msg_t) && len != sizeof(radio_alarm_msg_t)) { 
             return bufPtr;
         }
+        else if (len == sizeof(radio_alarm_msg_t)) {
+            // TODO: create socket with node red
+        }
         else {
-            radio_count_msg_t* rcm = (radio_count_msg_t*) payload;
+            radio_id_msg_t* rcm = (radio_id_msg_t*) payload;
+            // TODO: counter can be useful to know if 10 consecutive messages are received
             counter++;
             
-            printf("Received packet from %u, counter: %u\n", rcm->sender_id, rcm->counter);
-            printfflush();
+            logMessage("Radio", "Received packet from %u", rcm->sender_id);
 
-            if (rcm->sender_id == 1) {
-                call Leds.led0Toggle();
-                led0_ON = !led0_ON;
-            }
-            else if (rcm->sender_id == 2) {
-                call Leds.led1Toggle();
-                led1_ON = !led1_ON;
-            }
-            else if (rcm->sender_id == 3) {
-                call Leds.led2Toggle();
-                led2_ON = !led2_ON;
-            }
-
-            if (rcm->counter % 10 == 0) {
-                call Leds.led0Off();
-                call Leds.led1Off();
-                call Leds.led2Off();
-                
-                led0_ON = 0;
-                led1_ON = 0;
-                led2_ON = 0;
-                
-                printf("Reset\n");
-            	printfflush();
-            }
-            
-            printf("LEDS: %u%u%u, counter: %u\n", led2_ON, led1_ON, led0_ON, counter);
-            printfflush();
+            // TODO
             
             return bufPtr;
         }
@@ -128,7 +103,3 @@ implementation {
     }
 
 }
-
-
-
-
