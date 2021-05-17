@@ -2,6 +2,7 @@
 #include "KeepYourDistance.h"
 #include "printf.h"
 
+#include <stdio.h>
 #include <stdarg.h>
 
 #define FREQ 500
@@ -24,14 +25,12 @@ implementation {
     bool locked = FALSE;
     uint16_t counter = 0;
 
-    void format_string(char *fmt, va_list argptr, char *formatted_string);
-
-    void logMessage(const char *debug_ch, const char *fmt, ...) {
+    void logMessage(char *debug_ch, char *fmt, ...) {
         char formatted_string[255];
 
         va_list argptr;
         va_start(argptr,fmt);
-        format_string(fmt, argptr, formatted_string);
+        vsprintf(formatted_string, fmt, argptr);
         va_end(argptr);
 
         printf("[%s] (ID: %u) %s\n", debug_ch, TOS_NODE_ID, formatted_string);
@@ -46,7 +45,7 @@ implementation {
         
         if (err == SUCCESS) {
             call MilliTimer.startPeriodic(FREQ);
-            logMessage("Timer", "Started timer of %f ms", freq);
+            logMessage("Timer", "Started timer of %f ms", FREQ);
         }
         else {
             call AMControl.start();
@@ -82,6 +81,7 @@ implementation {
         }
         else if (len == sizeof(radio_alarm_msg_t)) {
             // TODO: create socket with node red
+            return bufPtr;
         }
         else {
             radio_id_msg_t* rcm = (radio_id_msg_t*) payload;
