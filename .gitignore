@@ -1,2 +1,7 @@
 # TinyOS make output
 TinyOS/build
+
+# Node-red backups
+NodeRED/*.backup
+
+*.log
