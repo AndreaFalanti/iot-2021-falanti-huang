@@ -1,6 +1,5 @@
 #define NEW_PRINTF_SEMANTICS
 #include "KeepYourDistance.h"
-//#include "printf.h"
 
 configuration KeepYourDistanceAppC { }
 

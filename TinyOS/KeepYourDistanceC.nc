@@ -1,7 +1,5 @@
 #include "Timer.h"
 #include "KeepYourDistance.h"
-//#include "printf.h"
-//#include "BcastMap.h"
 
 #include <stdio.h>
 #include <stdarg.h>
@@ -26,11 +24,25 @@ implementation {
     message_t packet;
 
     bool locked = FALSE;
-    uint8_t counter = 0;
+    uint8_t counter = 253;
     
     bcast_map_t *map = NULL;
     
-    //-----------------------------------------------------------------------
+    // ----------------------------------------------------------------------
+    
+    /* Printf wrapper to have a similar format to TOSSIM debug function */
+    void logMessage(char *debug_ch, char *fmt, ...) {
+        char formatted_string[255];
+
+        va_list argptr;
+        va_start(argptr,fmt);
+        vsprintf(formatted_string, fmt, argptr);
+        va_end(argptr);
+
+        printf("[%s] (ID: %u) %s\n", debug_ch, TOS_NODE_ID, formatted_string);
+    }
+    
+    // ---------------------- MAP DATA STRUCTURE ----------------------------
 
 	bcast_map_t* createMapEl(uint16_t sender_id, uint8_t msg_counter) {
 		bcast_map_t* el = (bcast_map_t*)malloc(sizeof(bcast_map_t));
@@ -66,20 +78,26 @@ implementation {
 			el = createMapEl(sender_id, msg_counter);
 			el->next = *l;
 			*l = el;
+			logMessage("Counter", "Consecutive counter for mote %u: %u", sender_id, el->consecutive_counter);
 	
 			return FALSE;
 		}
-		// update the already existing element
+		// update the already existing element in the map
 		else {
-			// a consecutive message is received
-			if (el->last_counter == msg_counter - 1) {
+			/* cast to uint8_t is necessary to accept as consecutive message the case when last_counter = 255 (max possible value)
+			 and msg_counter = 0 due to overflow */
+			// case where a consecutive message is received
+			if (el->last_counter == (uint8_t)(msg_counter - 1)) {
 				el->last_counter = msg_counter;
 				el->consecutive_counter++;
+				logMessage("Counter", "Consecutive counter for mote %u: %u", sender_id, el->consecutive_counter);
 		
-				// check if enough consecuive messages for an alarm have been received
+				// check if enough consecuive messages have been received for an alarm trigger 
 				if (el->consecutive_counter >= ALARM_TRIGGER_COUNT) {
 					// reset counter
+					logMessage("Counter", "Counter reset after alarm triggering");
 					el->consecutive_counter = 0;
+					
 					return TRUE;
 				}
 				else {
@@ -88,26 +106,17 @@ implementation {
 			}
 			// non consecutive message case
 			else {
+				logMessage("Counter", "Counter reset because non consecutive message is received");
 				el->last_counter = msg_counter;
-				el->consecutive_counter = 1;
+				el->consecutive_counter = 1;	// set immediately to 1 instead of reset and increment
+				logMessage("Counter", "Consecutive counter for mote %u: %u", sender_id, el->consecutive_counter);
+				
 				return FALSE;
 			}
 		}
 	}
     
-    //-----------------------------------------------------------------------
-
-    void logMessage(char *debug_ch, char *fmt, ...) {
-        char formatted_string[255];
-
-        va_list argptr;
-        va_start(argptr,fmt);
-        vsprintf(formatted_string, fmt, argptr);
-        va_end(argptr);
-
-        printf("[%s] (ID: %u) %s\n", debug_ch, TOS_NODE_ID, formatted_string);
-        //printfflush();
-    }
+    // ---------------------------------------------------------------------
     
     event void Boot.booted() {
         call AMControl.start();
@@ -155,8 +164,7 @@ implementation {
             return bufPtr;
         }
         else if (len == sizeof(radio_alarm_msg_t)) {
-            // TODO: create socket with node red
-            logMessage("Error", "Alarm should not be received by motes!");
+            logMessage("Error", "Alarm messages should not be received by motes!");
             return bufPtr;
         }
         else {
