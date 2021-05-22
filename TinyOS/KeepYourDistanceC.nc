@@ -9,7 +9,6 @@
 
 module KeepYourDistanceC @safe() {
   uses {
-    interface Leds;
     interface Boot;
     interface Receive;
     interface AMSend;
@@ -24,7 +23,7 @@ implementation {
     message_t packet;
 
     bool locked = FALSE;
-    uint8_t counter = 253;
+    uint8_t counter = 0;
     
     bcast_map_t *map = NULL;
     
