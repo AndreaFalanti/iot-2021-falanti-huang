@@ -122,7 +122,6 @@ implementation {
     }
 
     event void AMControl.startDone(error_t err) {
-        
         if (err == SUCCESS) {
             call MilliTimer.startPeriodic(FREQ);
             logMessage("Timer", "Started timer of %d ms", FREQ);
@@ -158,12 +157,8 @@ implementation {
 
     event message_t* Receive.receive(message_t* bufPtr, 
                     void* payload, uint8_t len) {
-        if (len != sizeof(radio_id_msg_t) && len != sizeof(radio_alarm_msg_t)) {
+        if (len != sizeof(radio_id_msg_t)) {
         	logMessage("Error", "Invalid packet received"); 
-            return bufPtr;
-        }
-        else if (len == sizeof(radio_alarm_msg_t)) {
-            logMessage("Error", "Alarm messages should not be received by motes!");
             return bufPtr;
         }
         else {
@@ -171,20 +166,7 @@ implementation {
             
             logMessage("Radio", "Received packet: sender %u, counter %u", rcm->sender_id, rcm->counter);
             
-            if (updateBcastMap(&map, rcm->sender_id, rcm->counter)) {
-            	// send alarm message
-            	/*radio_alarm_msg_t* alarm = (radio_alarm_msg_t*)call Packet.getPayload(&packet, sizeof(radio_alarm_msg_t));
-		        if (alarm == NULL) {
-		            return;
-		        }
-
-		        alarm->mote_id = TOS_NODE_ID;
-		        alarm->proximity_mote_id = rcm->sender_id;
-		        if (call AMSend.send(AM_BROADCAST_ADDR, &packet, sizeof(radio_alarm_msg_t)) == SUCCESS) {
-		            locked = TRUE;
-		            logMessage("Radio", "Alarm message sent");
-		        }*/
-		        
+            if (updateBcastMap(&map, rcm->sender_id, rcm->counter)) {	        
 		        logMessage("Alarm", "mote_id: %u, proximity_mote_id: %u", TOS_NODE_ID, rcm->sender_id);
             }
             
