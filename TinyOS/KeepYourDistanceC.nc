@@ -105,10 +105,9 @@ implementation {
 			}
 			// non consecutive message case
 			else {
-				logMessage("Counter", "Counter reset because non consecutive message is received");
 				el->last_counter = msg_counter;
 				el->consecutive_counter = 1;	// set immediately to 1 instead of reset and increment
-				logMessage("Counter", "Consecutive counter for mote %u: %u", sender_id, el->consecutive_counter);
+				logMessage("Counter", "Counter reset because non consecutive message is received, new counter for mote %u: %u", sender_id, el->consecutive_counter);
 				
 				return FALSE;
 			}
@@ -164,7 +163,7 @@ implementation {
         else {
             radio_id_msg_t* rcm = (radio_id_msg_t*) payload;
             
-            logMessage("Radio", "Received packet: sender %u, counter %u", rcm->sender_id, rcm->counter);
+            logMessage("Radio", "Received broadcast id packet: sender %u, counter %u", rcm->sender_id, rcm->counter);
             
             if (updateBcastMap(&map, rcm->sender_id, rcm->counter)) {	        
 		        logMessage("Alarm", "mote_id: %u, proximity_mote_id: %u", TOS_NODE_ID, rcm->sender_id);
