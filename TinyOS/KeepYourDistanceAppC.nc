@@ -1,6 +1,6 @@
 #define NEW_PRINTF_SEMANTICS
 #include "KeepYourDistance.h"
-#include "printf.h"
+//#include "printf.h"
 
 configuration KeepYourDistanceAppC { }
 
@@ -10,7 +10,7 @@ implementation {
   components new AMReceiverC(AM_RADIO_COUNT_MSG);
   components new TimerMilliC();
   components ActiveMessageC;
-  components PrintfC;
+  components SerialPrintfC;
   components SerialStartC;
 
   App.Boot -> MainC.Boot;
