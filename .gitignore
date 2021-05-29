@@ -3,5 +3,3 @@ TinyOS/build
 
 # Node-red backups
 NodeRED/*.backup
-
-*.log

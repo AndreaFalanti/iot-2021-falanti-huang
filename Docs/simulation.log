@@ -1,0 +1,386 @@
+00:04.325	ID:2	[Timer] (ID: 2) Started timer of 500 ms
+00:04.437	ID:4	[Timer] (ID: 4) Started timer of 500 ms
+00:04.471	ID:1	[Timer] (ID: 1) Started timer of 500 ms
+00:04.804	ID:5	[Timer] (ID: 5) Started timer of 500 ms
+00:04.814	ID:2	[Radio] (ID: 2) Broadcast message sent
+00:04.926	ID:4	[Radio] (ID: 4) Broadcast message sent
+00:04.960	ID:1	[Radio] (ID: 1) Broadcast message sent
+00:04.988	ID:3	[Timer] (ID: 3) Started timer of 500 ms
+00:05.293	ID:5	[Radio] (ID: 5) Broadcast message sent
+00:05.303	ID:2	[Radio] (ID: 2) Broadcast message sent
+00:05.414	ID:4	[Radio] (ID: 4) Broadcast message sent
+00:05.448	ID:1	[Radio] (ID: 1) Broadcast message sent
+00:05.477	ID:3	[Radio] (ID: 3) Broadcast message sent
+00:05.486	ID:4	[Radio] (ID: 4) Received broadcast id packet: sender 3, counter 0
+00:05.486	ID:5	[Radio] (ID: 5) Received broadcast id packet: sender 3, counter 0
+00:05.489	ID:4	[Counter] (ID: 4) Consecutive counter for mote 3: 1
+00:05.489	ID:5	[Counter] (ID: 5) Consecutive counter for mote 3: 1
+00:05.781	ID:5	[Radio] (ID: 5) Broadcast message sent
+00:05.790	ID:2	[Radio] (ID: 2) Broadcast message sent
+00:05.792	ID:3	[Radio] (ID: 3) Received broadcast id packet: sender 5, counter 1
+00:05.795	ID:3	[Counter] (ID: 3) Consecutive counter for mote 5: 1
+00:05.903	ID:4	[Radio] (ID: 4) Broadcast message sent
+00:05.912	ID:3	[Radio] (ID: 3) Received broadcast id packet: sender 4, counter 2
+00:05.915	ID:3	[Counter] (ID: 3) Consecutive counter for mote 4: 1
+00:05.937	ID:1	[Radio] (ID: 1) Broadcast message sent
+00:05.965	ID:3	[Radio] (ID: 3) Broadcast message sent
+00:05.976	ID:5	[Radio] (ID: 5) Received broadcast id packet: sender 3, counter 1
+00:05.976	ID:4	[Radio] (ID: 4) Received broadcast id packet: sender 3, counter 1
+00:05.980	ID:5	[Counter] (ID: 5) Consecutive counter for mote 3: 2
+00:05.980	ID:4	[Counter] (ID: 4) Consecutive counter for mote 3: 2
+00:06.269	ID:5	[Radio] (ID: 5) Broadcast message sent
+00:06.279	ID:2	[Radio] (ID: 2) Broadcast message sent
+00:06.281	ID:3	[Radio] (ID: 3) Received broadcast id packet: sender 5, counter 2
+00:06.285	ID:3	[Counter] (ID: 3) Consecutive counter for mote 5: 2
+00:06.391	ID:4	[Radio] (ID: 4) Broadcast message sent
+00:06.398	ID:3	[Radio] (ID: 3) Received broadcast id packet: sender 4, counter 3
+00:06.401	ID:3	[Counter] (ID: 3) Consecutive counter for mote 4: 2
+00:06.425	ID:1	[Radio] (ID: 1) Broadcast message sent
+00:06.454	ID:3	[Radio] (ID: 3) Broadcast message sent
+00:06.459	ID:5	[Radio] (ID: 5) Received broadcast id packet: sender 3, counter 2
+00:06.459	ID:4	[Radio] (ID: 4) Received broadcast id packet: sender 3, counter 2
+00:06.463	ID:5	[Counter] (ID: 5) Consecutive counter for mote 3: 3
+00:06.463	ID:4	[Counter] (ID: 4) Consecutive counter for mote 3: 3
+00:06.758	ID:5	[Radio] (ID: 5) Broadcast message sent
+00:06.765	ID:3	[Radio] (ID: 3) Received broadcast id packet: sender 5, counter 3
+00:06.767	ID:2	[Radio] (ID: 2) Broadcast message sent
+00:06.768	ID:3	[Counter] (ID: 3) Consecutive counter for mote 5: 3
+00:06.879	ID:4	[Radio] (ID: 4) Broadcast message sent
+00:06.888	ID:3	[Radio] (ID: 3) Received broadcast id packet: sender 4, counter 4
+00:06.892	ID:3	[Counter] (ID: 3) Consecutive counter for mote 4: 3
+00:06.913	ID:1	[Radio] (ID: 1) Broadcast message sent
+00:06.942	ID:3	[Radio] (ID: 3) Broadcast message sent
+00:06.948	ID:4	[Radio] (ID: 4) Received broadcast id packet: sender 3, counter 3
+00:06.948	ID:5	[Radio] (ID: 5) Received broadcast id packet: sender 3, counter 3
+00:06.951	ID:4	[Counter] (ID: 4) Consecutive counter for mote 3: 4
+00:06.951	ID:5	[Counter] (ID: 5) Consecutive counter for mote 3: 4
+00:07.246	ID:5	[Radio] (ID: 5) Broadcast message sent
+00:07.256	ID:2	[Radio] (ID: 2) Broadcast message sent
+00:07.256	ID:3	[Radio] (ID: 3) Received broadcast id packet: sender 5, counter 4
+00:07.260	ID:3	[Counter] (ID: 3) Consecutive counter for mote 5: 4
+00:07.265	ID:3	[Radio] (ID: 3) Received broadcast id packet: sender 2, counter 5
+00:07.268	ID:3	[Counter] (ID: 3) Consecutive counter for mote 2: 1
+00:07.367	ID:4	[Radio] (ID: 4) Broadcast message sent
+00:07.401	ID:1	[Radio] (ID: 1) Broadcast message sent
+00:07.430	ID:3	[Radio] (ID: 3) Broadcast message sent
+00:07.438	ID:5	[Radio] (ID: 5) Received broadcast id packet: sender 3, counter 4
+00:07.438	ID:2	[Radio] (ID: 2) Received broadcast id packet: sender 3, counter 4
+00:07.441	ID:5	[Counter] (ID: 5) Consecutive counter for mote 3: 5
+00:07.441	ID:2	[Counter] (ID: 2) Consecutive counter for mote 3: 1
+00:07.734	ID:5	[Radio] (ID: 5) Broadcast message sent
+00:07.743	ID:2	[Radio] (ID: 2) Broadcast message sent
+00:07.748	ID:3	[Radio] (ID: 3) Received broadcast id packet: sender 5, counter 5
+00:07.752	ID:3	[Counter] (ID: 3) Consecutive counter for mote 5: 5
+00:07.757	ID:3	[Radio] (ID: 3) Received broadcast id packet: sender 2, counter 6
+00:07.760	ID:3	[Counter] (ID: 3) Consecutive counter for mote 2: 2
+00:07.856	ID:4	[Radio] (ID: 4) Broadcast message sent
+00:07.890	ID:1	[Radio] (ID: 1) Broadcast message sent
+00:07.918	ID:3	[Radio] (ID: 3) Broadcast message sent
+00:07.927	ID:2	[Radio] (ID: 2) Received broadcast id packet: sender 3, counter 5
+00:07.927	ID:5	[Radio] (ID: 5) Received broadcast id packet: sender 3, counter 5
+00:07.931	ID:2	[Counter] (ID: 2) Consecutive counter for mote 3: 2
+00:07.931	ID:5	[Counter] (ID: 5) Consecutive counter for mote 3: 6
+00:08.222	ID:5	[Radio] (ID: 5) Broadcast message sent
+00:08.232	ID:2	[Radio] (ID: 2) Broadcast message sent
+00:08.232	ID:3	[Radio] (ID: 3) Received broadcast id packet: sender 5, counter 6
+00:08.235	ID:3	[Counter] (ID: 3) Consecutive counter for mote 5: 6
+00:08.243	ID:3	[Radio] (ID: 3) Received broadcast id packet: sender 2, counter 7
+00:08.247	ID:3	[Counter] (ID: 3) Consecutive counter for mote 2: 3
+00:08.344	ID:4	[Radio] (ID: 4) Broadcast message sent
+00:08.378	ID:1	[Radio] (ID: 1) Broadcast message sent
+00:08.407	ID:3	[Radio] (ID: 3) Broadcast message sent
+00:08.411	ID:2	[Radio] (ID: 2) Received broadcast id packet: sender 3, counter 6
+00:08.411	ID:5	[Radio] (ID: 5) Received broadcast id packet: sender 3, counter 6
+00:08.415	ID:2	[Counter] (ID: 2) Consecutive counter for mote 3: 3
+00:08.415	ID:5	[Counter] (ID: 5) Consecutive counter for mote 3: 7
+00:08.711	ID:5	[Radio] (ID: 5) Broadcast message sent
+00:08.720	ID:3	[Radio] (ID: 3) Received broadcast id packet: sender 5, counter 7
+00:08.721	ID:2	[Radio] (ID: 2) Broadcast message sent
+00:08.724	ID:3	[Counter] (ID: 3) Consecutive counter for mote 5: 7
+00:08.729	ID:3	[Radio] (ID: 3) Received broadcast id packet: sender 2, counter 8
+00:08.732	ID:3	[Counter] (ID: 3) Consecutive counter for mote 2: 4
+00:08.833	ID:4	[Radio] (ID: 4) Broadcast message sent
+00:08.838	ID:1	[Radio] (ID: 1) Received broadcast id packet: sender 4, counter 8
+00:08.838	ID:3	[Radio] (ID: 3) Received broadcast id packet: sender 4, counter 8
+00:08.842	ID:1	[Counter] (ID: 1) Consecutive counter for mote 4: 1
+00:08.844	ID:3	[Counter] (ID: 3) Counter reset because non consecutive message is received, new counter for mote 4: 1
+00:08.867	ID:1	[Radio] (ID: 1) Broadcast message sent
+00:08.871	ID:4	[Radio] (ID: 4) Received broadcast id packet: sender 1, counter 8
+00:08.874	ID:4	[Counter] (ID: 4) Consecutive counter for mote 1: 1
+00:08.896	ID:3	[Radio] (ID: 3) Broadcast message sent
+00:08.900	ID:2	[Radio] (ID: 2) Received broadcast id packet: sender 3, counter 7
+00:08.900	ID:4	[Radio] (ID: 4) Received broadcast id packet: sender 3, counter 7
+00:08.900	ID:5	[Radio] (ID: 5) Received broadcast id packet: sender 3, counter 7
+00:08.903	ID:2	[Counter] (ID: 2) Consecutive counter for mote 3: 4
+00:08.903	ID:5	[Counter] (ID: 5) Consecutive counter for mote 3: 8
+00:08.906	ID:4	[Counter] (ID: 4) Counter reset because non consecutive message is received, new counter for mote 3: 1
+00:09.199	ID:5	[Radio] (ID: 5) Broadcast message sent
+00:09.208	ID:2	[Radio] (ID: 2) Broadcast message sent
+00:09.211	ID:3	[Radio] (ID: 3) Received broadcast id packet: sender 5, counter 8
+00:09.214	ID:3	[Counter] (ID: 3) Consecutive counter for mote 5: 8
+00:09.220	ID:3	[Radio] (ID: 3) Received broadcast id packet: sender 2, counter 9
+00:09.223	ID:3	[Counter] (ID: 3) Consecutive counter for mote 2: 5
+00:09.321	ID:4	[Radio] (ID: 4) Broadcast message sent
+00:09.332	ID:3	[Radio] (ID: 3) Received broadcast id packet: sender 4, counter 9
+00:09.332	ID:1	[Radio] (ID: 1) Received broadcast id packet: sender 4, counter 9
+00:09.336	ID:1	[Counter] (ID: 1) Consecutive counter for mote 4: 2
+00:09.336	ID:3	[Counter] (ID: 3) Consecutive counter for mote 4: 2
+00:09.355	ID:1	[Radio] (ID: 1) Broadcast message sent
+00:09.360	ID:4	[Radio] (ID: 4) Received broadcast id packet: sender 1, counter 9
+00:09.363	ID:4	[Counter] (ID: 4) Consecutive counter for mote 1: 2
+00:09.384	ID:3	[Radio] (ID: 3) Broadcast message sent
+00:09.389	ID:5	[Radio] (ID: 5) Received broadcast id packet: sender 3, counter 8
+00:09.389	ID:4	[Radio] (ID: 4) Received broadcast id packet: sender 3, counter 8
+00:09.389	ID:2	[Radio] (ID: 2) Received broadcast id packet: sender 3, counter 8
+00:09.392	ID:5	[Counter] (ID: 5) Consecutive counter for mote 3: 9
+00:09.392	ID:2	[Counter] (ID: 2) Consecutive counter for mote 3: 5
+00:09.392	ID:4	[Counter] (ID: 4) Consecutive counter for mote 3: 2
+00:09.687	ID:5	[Radio] (ID: 5) Broadcast message sent
+00:09.695	ID:3	[Radio] (ID: 3) Received broadcast id packet: sender 5, counter 9
+00:09.697	ID:2	[Radio] (ID: 2) Broadcast message sent
+00:09.698	ID:3	[Counter] (ID: 3) Consecutive counter for mote 5: 9
+00:09.707	ID:3	[Radio] (ID: 3) Received broadcast id packet: sender 2, counter 10
+00:09.710	ID:3	[Counter] (ID: 3) Consecutive counter for mote 2: 6
+00:09.809	ID:4	[Radio] (ID: 4) Broadcast message sent
+00:09.816	ID:3	[Radio] (ID: 3) Received broadcast id packet: sender 4, counter 10
+00:09.816	ID:1	[Radio] (ID: 1) Received broadcast id packet: sender 4, counter 10
+00:09.819	ID:1	[Counter] (ID: 1) Consecutive counter for mote 4: 3
+00:09.819	ID:3	[Counter] (ID: 3) Consecutive counter for mote 4: 3
+00:09.843	ID:1	[Radio] (ID: 1) Broadcast message sent
+00:09.853	ID:4	[Radio] (ID: 4) Received broadcast id packet: sender 1, counter 10
+00:09.856	ID:4	[Counter] (ID: 4) Consecutive counter for mote 1: 3
+00:09.872	ID:3	[Radio] (ID: 3) Broadcast message sent
+00:09.878	ID:2	[Radio] (ID: 2) Received broadcast id packet: sender 3, counter 9
+00:09.878	ID:5	[Radio] (ID: 5) Received broadcast id packet: sender 3, counter 9
+00:09.878	ID:4	[Radio] (ID: 4) Received broadcast id packet: sender 3, counter 9
+00:09.881	ID:2	[Counter] (ID: 2) Consecutive counter for mote 3: 6
+00:09.881	ID:4	[Counter] (ID: 4) Consecutive counter for mote 3: 3
+00:09.881	ID:5	[Counter] (ID: 5) Consecutive counter for mote 3: 10
+00:09.885	ID:5	[Counter] (ID: 5) Counter reset after alarm triggering
+00:09.888	ID:5	[Alarm] (ID: 5) mote_id: 5, proximity_mote_id: 3
+00:10.176	ID:5	[Radio] (ID: 5) Broadcast message sent
+00:10.185	ID:2	[Radio] (ID: 2) Broadcast message sent
+00:10.188	ID:3	[Radio] (ID: 3) Received broadcast id packet: sender 5, counter 10
+00:10.192	ID:3	[Counter] (ID: 3) Consecutive counter for mote 5: 10
+00:10.195	ID:3	[Counter] (ID: 3) Counter reset after alarm triggering
+00:10.198	ID:3	[Alarm] (ID: 3) mote_id: 3, proximity_mote_id: 5
+00:10.204	ID:3	[Radio] (ID: 3) Received broadcast id packet: sender 2, counter 11
+00:10.207	ID:3	[Counter] (ID: 3) Consecutive counter for mote 2: 7
+00:10.297	ID:4	[Radio] (ID: 4) Broadcast message sent
+00:10.308	ID:1	[Radio] (ID: 1) Received broadcast id packet: sender 4, counter 11
+00:10.308	ID:3	[Radio] (ID: 3) Received broadcast id packet: sender 4, counter 11
+00:10.312	ID:1	[Counter] (ID: 1) Consecutive counter for mote 4: 4
+00:10.312	ID:3	[Counter] (ID: 3) Consecutive counter for mote 4: 4
+00:10.331	ID:1	[Radio] (ID: 1) Broadcast message sent
+00:10.342	ID:4	[Radio] (ID: 4) Received broadcast id packet: sender 1, counter 11
+00:10.345	ID:4	[Counter] (ID: 4) Consecutive counter for mote 1: 4
+00:10.360	ID:3	[Radio] (ID: 3) Broadcast message sent
+00:10.367	ID:2	[Radio] (ID: 2) Received broadcast id packet: sender 3, counter 10
+00:10.367	ID:4	[Radio] (ID: 4) Received broadcast id packet: sender 3, counter 10
+00:10.367	ID:5	[Radio] (ID: 5) Received broadcast id packet: sender 3, counter 10
+00:10.370	ID:2	[Counter] (ID: 2) Consecutive counter for mote 3: 7
+00:10.370	ID:4	[Counter] (ID: 4) Consecutive counter for mote 3: 4
+00:10.370	ID:5	[Counter] (ID: 5) Consecutive counter for mote 3: 1
+00:10.664	ID:5	[Radio] (ID: 5) Broadcast message sent
+00:10.673	ID:2	[Radio] (ID: 2) Broadcast message sent
+00:10.673	ID:3	[Radio] (ID: 3) Received broadcast id packet: sender 5, counter 11
+00:10.677	ID:3	[Counter] (ID: 3) Consecutive counter for mote 5: 1
+00:10.687	ID:3	[Radio] (ID: 3) Received broadcast id packet: sender 2, counter 12
+00:10.690	ID:3	[Counter] (ID: 3) Consecutive counter for mote 2: 8
+00:10.785	ID:4	[Radio] (ID: 4) Broadcast message sent
+00:10.796	ID:1	[Radio] (ID: 1) Received broadcast id packet: sender 4, counter 12
+00:10.796	ID:3	[Radio] (ID: 3) Received broadcast id packet: sender 4, counter 12
+00:10.799	ID:3	[Counter] (ID: 3) Consecutive counter for mote 4: 5
+00:10.799	ID:1	[Counter] (ID: 1) Consecutive counter for mote 4: 5
+00:10.819	ID:1	[Radio] (ID: 1) Broadcast message sent
+00:10.830	ID:4	[Radio] (ID: 4) Received broadcast id packet: sender 1, counter 12
+00:10.833	ID:4	[Counter] (ID: 4) Consecutive counter for mote 1: 5
+00:10.848	ID:3	[Radio] (ID: 3) Broadcast message sent
+00:10.855	ID:4	[Radio] (ID: 4) Received broadcast id packet: sender 3, counter 11
+00:10.855	ID:5	[Radio] (ID: 5) Received broadcast id packet: sender 3, counter 11
+00:10.855	ID:2	[Radio] (ID: 2) Received broadcast id packet: sender 3, counter 11
+00:10.859	ID:5	[Counter] (ID: 5) Consecutive counter for mote 3: 2
+00:10.859	ID:2	[Counter] (ID: 2) Consecutive counter for mote 3: 8
+00:10.859	ID:4	[Counter] (ID: 4) Consecutive counter for mote 3: 5
+00:11.152	ID:5	[Radio] (ID: 5) Broadcast message sent
+00:11.161	ID:2	[Radio] (ID: 2) Broadcast message sent
+00:11.165	ID:3	[Radio] (ID: 3) Received broadcast id packet: sender 5, counter 12
+00:11.169	ID:3	[Counter] (ID: 3) Consecutive counter for mote 5: 2
+00:11.175	ID:3	[Radio] (ID: 3) Received broadcast id packet: sender 2, counter 13
+00:11.178	ID:3	[Counter] (ID: 3) Consecutive counter for mote 2: 9
+00:11.274	ID:4	[Radio] (ID: 4) Broadcast message sent
+00:11.281	ID:1	[Radio] (ID: 1) Received broadcast id packet: sender 4, counter 13
+00:11.281	ID:3	[Radio] (ID: 3) Received broadcast id packet: sender 4, counter 13
+00:11.284	ID:1	[Counter] (ID: 1) Consecutive counter for mote 4: 6
+00:11.284	ID:3	[Counter] (ID: 3) Consecutive counter for mote 4: 6
+00:11.307	ID:1	[Radio] (ID: 1) Broadcast message sent
+00:11.319	ID:4	[Radio] (ID: 4) Received broadcast id packet: sender 1, counter 13
+00:11.323	ID:4	[Counter] (ID: 4) Consecutive counter for mote 1: 6
+00:11.336	ID:3	[Radio] (ID: 3) Broadcast message sent
+00:11.344	ID:5	[Radio] (ID: 5) Received broadcast id packet: sender 3, counter 12
+00:11.344	ID:2	[Radio] (ID: 2) Received broadcast id packet: sender 3, counter 12
+00:11.344	ID:4	[Radio] (ID: 4) Received broadcast id packet: sender 3, counter 12
+00:11.347	ID:5	[Counter] (ID: 5) Consecutive counter for mote 3: 3
+00:11.347	ID:2	[Counter] (ID: 2) Consecutive counter for mote 3: 9
+00:11.347	ID:4	[Counter] (ID: 4) Consecutive counter for mote 3: 6
+00:11.640	ID:5	[Radio] (ID: 5) Broadcast message sent
+00:11.649	ID:3	[Radio] (ID: 3) Received broadcast id packet: sender 5, counter 13
+00:11.650	ID:2	[Radio] (ID: 2) Broadcast message sent
+00:11.653	ID:3	[Counter] (ID: 3) Consecutive counter for mote 5: 3
+00:11.658	ID:3	[Radio] (ID: 3) Received broadcast id packet: sender 2, counter 14
+00:11.662	ID:3	[Counter] (ID: 3) Consecutive counter for mote 2: 10
+00:11.665	ID:3	[Counter] (ID: 3) Counter reset after alarm triggering
+00:11.668	ID:3	[Alarm] (ID: 3) mote_id: 3, proximity_mote_id: 2
+00:11.762	ID:4	[Radio] (ID: 4) Broadcast message sent
+00:11.772	ID:1	[Radio] (ID: 1) Received broadcast id packet: sender 4, counter 14
+00:11.772	ID:3	[Radio] (ID: 3) Received broadcast id packet: sender 4, counter 14
+00:11.776	ID:1	[Counter] (ID: 1) Consecutive counter for mote 4: 7
+00:11.776	ID:3	[Counter] (ID: 3) Consecutive counter for mote 4: 7
+00:11.796	ID:1	[Radio] (ID: 1) Broadcast message sent
+00:11.809	ID:4	[Radio] (ID: 4) Received broadcast id packet: sender 1, counter 14
+00:11.812	ID:4	[Counter] (ID: 4) Consecutive counter for mote 1: 7
+00:11.825	ID:3	[Radio] (ID: 3) Broadcast message sent
+00:11.830	ID:5	[Radio] (ID: 5) Received broadcast id packet: sender 3, counter 13
+00:11.830	ID:2	[Radio] (ID: 2) Received broadcast id packet: sender 3, counter 13
+00:11.830	ID:4	[Radio] (ID: 4) Received broadcast id packet: sender 3, counter 13
+00:11.834	ID:5	[Counter] (ID: 5) Consecutive counter for mote 3: 4
+00:11.834	ID:4	[Counter] (ID: 4) Consecutive counter for mote 3: 7
+00:11.834	ID:2	[Counter] (ID: 2) Consecutive counter for mote 3: 10
+00:11.837	ID:2	[Counter] (ID: 2) Counter reset after alarm triggering
+00:11.840	ID:2	[Alarm] (ID: 2) mote_id: 2, proximity_mote_id: 3
+00:12.129	ID:5	[Radio] (ID: 5) Broadcast message sent
+00:12.136	ID:3	[Radio] (ID: 3) Received broadcast id packet: sender 5, counter 14
+00:12.138	ID:2	[Radio] (ID: 2) Broadcast message sent
+00:12.139	ID:3	[Counter] (ID: 3) Consecutive counter for mote 5: 4
+00:12.152	ID:3	[Radio] (ID: 3) Received broadcast id packet: sender 2, counter 15
+00:12.155	ID:3	[Counter] (ID: 3) Consecutive counter for mote 2: 1
+00:12.250	ID:4	[Radio] (ID: 4) Broadcast message sent
+00:12.263	ID:1	[Radio] (ID: 1) Received broadcast id packet: sender 4, counter 15
+00:12.263	ID:3	[Radio] (ID: 3) Received broadcast id packet: sender 4, counter 15
+00:12.266	ID:3	[Counter] (ID: 3) Consecutive counter for mote 4: 8
+00:12.266	ID:1	[Counter] (ID: 1) Consecutive counter for mote 4: 8
+00:12.284	ID:1	[Radio] (ID: 1) Broadcast message sent
+00:12.291	ID:4	[Radio] (ID: 4) Received broadcast id packet: sender 1, counter 15
+00:12.295	ID:4	[Counter] (ID: 4) Consecutive counter for mote 1: 8
+00:12.313	ID:3	[Radio] (ID: 3) Broadcast message sent
+00:12.321	ID:2	[Radio] (ID: 2) Received broadcast id packet: sender 3, counter 14
+00:12.321	ID:4	[Radio] (ID: 4) Received broadcast id packet: sender 3, counter 14
+00:12.321	ID:5	[Radio] (ID: 5) Received broadcast id packet: sender 3, counter 14
+00:12.324	ID:4	[Counter] (ID: 4) Consecutive counter for mote 3: 8
+00:12.324	ID:2	[Counter] (ID: 2) Consecutive counter for mote 3: 1
+00:12.324	ID:5	[Counter] (ID: 5) Consecutive counter for mote 3: 5
+00:12.617	ID:5	[Radio] (ID: 5) Broadcast message sent
+00:12.626	ID:3	[Radio] (ID: 3) Received broadcast id packet: sender 5, counter 15
+00:12.626	ID:2	[Radio] (ID: 2) Broadcast message sent
+00:12.630	ID:3	[Counter] (ID: 3) Consecutive counter for mote 5: 5
+00:12.635	ID:3	[Radio] (ID: 3) Received broadcast id packet: sender 2, counter 16
+00:12.638	ID:3	[Counter] (ID: 3) Consecutive counter for mote 2: 2
+00:12.738	ID:4	[Radio] (ID: 4) Broadcast message sent
+00:12.746	ID:1	[Radio] (ID: 1) Received broadcast id packet: sender 4, counter 16
+00:12.746	ID:3	[Radio] (ID: 3) Received broadcast id packet: sender 4, counter 16
+00:12.750	ID:3	[Counter] (ID: 3) Consecutive counter for mote 4: 9
+00:12.750	ID:1	[Counter] (ID: 1) Consecutive counter for mote 4: 9
+00:12.772	ID:1	[Radio] (ID: 1) Broadcast message sent
+00:12.780	ID:4	[Radio] (ID: 4) Received broadcast id packet: sender 1, counter 16
+00:12.783	ID:4	[Counter] (ID: 4) Consecutive counter for mote 1: 9
+00:12.801	ID:3	[Radio] (ID: 3) Broadcast message sent
+00:12.811	ID:2	[Radio] (ID: 2) Received broadcast id packet: sender 3, counter 15
+00:12.811	ID:5	[Radio] (ID: 5) Received broadcast id packet: sender 3, counter 15
+00:12.811	ID:4	[Radio] (ID: 4) Received broadcast id packet: sender 3, counter 15
+00:12.815	ID:2	[Counter] (ID: 2) Consecutive counter for mote 3: 2
+00:12.815	ID:5	[Counter] (ID: 5) Consecutive counter for mote 3: 6
+00:12.815	ID:4	[Counter] (ID: 4) Consecutive counter for mote 3: 9
+00:13.105	ID:5	[Radio] (ID: 5) Broadcast message sent
+00:13.114	ID:3	[Radio] (ID: 3) Received broadcast id packet: sender 5, counter 16
+00:13.115	ID:2	[Radio] (ID: 2) Broadcast message sent
+00:13.118	ID:3	[Counter] (ID: 3) Consecutive counter for mote 5: 6
+00:13.123	ID:3	[Radio] (ID: 3) Received broadcast id packet: sender 2, counter 17
+00:13.127	ID:3	[Counter] (ID: 3) Consecutive counter for mote 2: 3
+00:13.227	ID:4	[Radio] (ID: 4) Broadcast message sent
+00:13.234	ID:3	[Radio] (ID: 3) Received broadcast id packet: sender 4, counter 17
+00:13.234	ID:1	[Radio] (ID: 1) Received broadcast id packet: sender 4, counter 17
+00:13.237	ID:1	[Counter] (ID: 1) Consecutive counter for mote 4: 10
+00:13.237	ID:3	[Counter] (ID: 3) Consecutive counter for mote 4: 10
+00:13.240	ID:1	[Counter] (ID: 1) Counter reset after alarm triggering
+00:13.240	ID:3	[Counter] (ID: 3) Counter reset after alarm triggering
+00:13.244	ID:1	[Alarm] (ID: 1) mote_id: 1, proximity_mote_id: 4
+00:13.244	ID:3	[Alarm] (ID: 3) mote_id: 3, proximity_mote_id: 4
+00:13.261	ID:1	[Radio] (ID: 1) Broadcast message sent
+00:13.270	ID:4	[Radio] (ID: 4) Received broadcast id packet: sender 1, counter 17
+00:13.273	ID:4	[Counter] (ID: 4) Consecutive counter for mote 1: 10
+00:13.276	ID:4	[Counter] (ID: 4) Counter reset after alarm triggering
+00:13.279	ID:4	[Alarm] (ID: 4) mote_id: 4, proximity_mote_id: 1
+00:13.289	ID:3	[Radio] (ID: 3) Broadcast message sent
+00:13.300	ID:2	[Radio] (ID: 2) Received broadcast id packet: sender 3, counter 16
+00:13.300	ID:4	[Radio] (ID: 4) Received broadcast id packet: sender 3, counter 16
+00:13.300	ID:5	[Radio] (ID: 5) Received broadcast id packet: sender 3, counter 16
+00:13.303	ID:2	[Counter] (ID: 2) Consecutive counter for mote 3: 3
+00:13.303	ID:5	[Counter] (ID: 5) Consecutive counter for mote 3: 7
+00:13.303	ID:4	[Counter] (ID: 4) Consecutive counter for mote 3: 10
+00:13.306	ID:4	[Counter] (ID: 4) Counter reset after alarm triggering
+00:13.309	ID:4	[Alarm] (ID: 4) mote_id: 4, proximity_mote_id: 3
+00:13.594	ID:5	[Radio] (ID: 5) Broadcast message sent
+00:13.603	ID:2	[Radio] (ID: 2) Broadcast message sent
+00:13.607	ID:3	[Radio] (ID: 3) Received broadcast id packet: sender 5, counter 17
+00:13.611	ID:3	[Counter] (ID: 3) Consecutive counter for mote 5: 7
+00:13.616	ID:3	[Radio] (ID: 3) Received broadcast id packet: sender 2, counter 18
+00:13.620	ID:3	[Counter] (ID: 3) Consecutive counter for mote 2: 4
+00:13.715	ID:4	[Radio] (ID: 4) Broadcast message sent
+00:13.723	ID:1	[Radio] (ID: 1) Received broadcast id packet: sender 4, counter 18
+00:13.723	ID:3	[Radio] (ID: 3) Received broadcast id packet: sender 4, counter 18
+00:13.727	ID:1	[Counter] (ID: 1) Consecutive counter for mote 4: 1
+00:13.727	ID:3	[Counter] (ID: 3) Consecutive counter for mote 4: 1
+00:13.749	ID:1	[Radio] (ID: 1) Broadcast message sent
+00:13.759	ID:4	[Radio] (ID: 4) Received broadcast id packet: sender 1, counter 18
+00:13.763	ID:4	[Counter] (ID: 4) Consecutive counter for mote 1: 1
+00:13.778	ID:3	[Radio] (ID: 3) Broadcast message sent
+00:13.787	ID:2	[Radio] (ID: 2) Received broadcast id packet: sender 3, counter 17
+00:13.787	ID:4	[Radio] (ID: 4) Received broadcast id packet: sender 3, counter 17
+00:13.787	ID:5	[Radio] (ID: 5) Received broadcast id packet: sender 3, counter 17
+00:13.791	ID:4	[Counter] (ID: 4) Consecutive counter for mote 3: 1
+00:13.791	ID:2	[Counter] (ID: 2) Consecutive counter for mote 3: 4
+00:13.791	ID:5	[Counter] (ID: 5) Consecutive counter for mote 3: 8
+00:14.082	ID:5	[Radio] (ID: 5) Broadcast message sent
+00:14.091	ID:2	[Radio] (ID: 2) Broadcast message sent
+00:14.091	ID:3	[Radio] (ID: 3) Received broadcast id packet: sender 5, counter 18
+00:14.095	ID:3	[Counter] (ID: 3) Consecutive counter for mote 5: 8
+00:14.102	ID:3	[Radio] (ID: 3) Received broadcast id packet: sender 2, counter 19
+00:14.105	ID:3	[Counter] (ID: 3) Consecutive counter for mote 2: 5
+00:14.203	ID:4	[Radio] (ID: 4) Broadcast message sent
+00:14.211	ID:1	[Radio] (ID: 1) Received broadcast id packet: sender 4, counter 19
+00:14.211	ID:3	[Radio] (ID: 3) Received broadcast id packet: sender 4, counter 19
+00:14.215	ID:1	[Counter] (ID: 1) Consecutive counter for mote 4: 2
+00:14.215	ID:3	[Counter] (ID: 3) Consecutive counter for mote 4: 2
+00:14.238	ID:1	[Radio] (ID: 1) Broadcast message sent
+00:14.243	ID:4	[Radio] (ID: 4) Received broadcast id packet: sender 1, counter 19
+00:14.246	ID:4	[Counter] (ID: 4) Consecutive counter for mote 1: 2
+00:14.266	ID:3	[Radio] (ID: 3) Broadcast message sent
+00:14.279	ID:2	[Radio] (ID: 2) Received broadcast id packet: sender 3, counter 18
+00:14.279	ID:5	[Radio] (ID: 5) Received broadcast id packet: sender 3, counter 18
+00:14.279	ID:4	[Radio] (ID: 4) Received broadcast id packet: sender 3, counter 18
+00:14.282	ID:2	[Counter] (ID: 2) Consecutive counter for mote 3: 5
+00:14.282	ID:5	[Counter] (ID: 5) Consecutive counter for mote 3: 9
+00:14.282	ID:4	[Counter] (ID: 4) Consecutive counter for mote 3: 2
+00:14.570	ID:5	[Radio] (ID: 5) Broadcast message sent
+00:14.579	ID:2	[Radio] (ID: 2) Broadcast message sent
+00:14.584	ID:3	[Radio] (ID: 3) Received broadcast id packet: sender 5, counter 19
+00:14.587	ID:3	[Counter] (ID: 3) Consecutive counter for mote 5: 9
+00:14.592	ID:3	[Radio] (ID: 3) Received broadcast id packet: sender 2, counter 20
+00:14.596	ID:3	[Counter] (ID: 3) Consecutive counter for mote 2: 6
+00:14.692	ID:4	[Radio] (ID: 4) Broadcast message sent
+00:14.703	ID:1	[Radio] (ID: 1) Received broadcast id packet: sender 4, counter 20
+00:14.703	ID:3	[Radio] (ID: 3) Received broadcast id packet: sender 4, counter 20
+00:14.706	ID:1	[Counter] (ID: 1) Consecutive counter for mote 4: 3
+00:14.706	ID:3	[Counter] (ID: 3) Consecutive counter for mote 4: 3
+00:14.725	ID:1	[Radio] (ID: 1) Broadcast message sent
+00:14.733	ID:4	[Radio] (ID: 4) Received broadcast id packet: sender 1, counter 20
+00:14.736	ID:4	[Counter] (ID: 4) Consecutive counter for mote 1: 3
+00:14.754	ID:3	[Radio] (ID: 3) Broadcast message sent
+00:14.767	ID:2	[Radio] (ID: 2) Received broadcast id packet: sender 3, counter 19
+00:14.767	ID:4	[Radio] (ID: 4) Received broadcast id packet: sender 3, counter 19
+00:14.767	ID:5	[Radio] (ID: 5) Received broadcast id packet: sender 3, counter 19
+00:14.770	ID:2	[Counter] (ID: 2) Consecutive counter for mote 3: 6
+00:14.770	ID:4	[Counter] (ID: 4) Consecutive counter for mote 3: 3
+00:14.770	ID:5	[Counter] (ID: 5) Consecutive counter for mote 3: 10
+00:14.773	ID:5	[Counter] (ID: 5) Counter reset after alarm triggering
+00:14.776	ID:5	[Alarm] (ID: 5) mote_id: 5, proximity_mote_id: 3
