@@ -1,0 +1,36 @@
+22/05/2021 23:44:38 node: msg sent to IFTTT debug, msg.payload : Object
+{ value1: "5", value2: "3" }
+22/05/2021 23:44:38 node: msg sent to IFTTT debug, msg.payload : Object
+{ value1: "3", value2: "5" }
+22/05/2021 23:44:38 node: IFTTT result debug, msg.payload : string[49]
+"Congratulations! You've fired the iot_alarm event"
+22/05/2021 23:44:39 node: IFTTT result debug, msg.payload : string[49]
+"Congratulations! You've fired the iot_alarm event"
+22/05/2021 23:44:40 node: msg sent to IFTTT debug, msg.payload : Object
+{ value1: "3", value2: "2" }
+22/05/2021 23:44:40 node: msg sent to IFTTT debug, msg.payload : Object
+{ value1: "2", value2: "3" }
+22/05/2021 23:44:40 node: IFTTT result debug, msg.payload : string[49]
+"Congratulations! You've fired the iot_alarm event"
+22/05/2021 23:44:40 node: IFTTT result debug, msg.payload : string[49]
+"Congratulations! You've fired the iot_alarm event"
+22/05/2021 23:44:53 node: msg sent to IFTTT debug, msg.payload : Object
+{ value1: "1", value2: "4" }
+22/05/2021 23:44:53 node: msg sent to IFTTT debug, msg.payload : Object
+{ value1: "3", value2: "4" }
+22/05/2021 23:44:53 node: msg sent to IFTTT debug, msg.payload : Object
+{ value1: "4", value2: "1" }
+22/05/2021 23:44:53 node: msg sent to IFTTT debug, msg.payload : Object
+{ value1: "4", value2: "3" }
+22/05/2021 23:44:53 node: IFTTT result debug, msg.payload : string[49]
+"Congratulations! You've fired the iot_alarm event"
+22/05/2021 23:44:53 node: IFTTT result debug, msg.payload : string[49]
+"Congratulations! You've fired the iot_alarm event"
+22/05/2021 23:44:54 node: IFTTT result debug, msg.payload : string[49]
+"Congratulations! You've fired the iot_alarm event"
+22/05/2021 23:44:54 node: IFTTT result debug, msg.payload : string[49]
+"Congratulations! You've fired the iot_alarm event"
+22/05/2021 23:44:55 node: msg sent to IFTTT debug msg.payload : Object
+{ value1: "5", value2: "3" }
+22/05/2021 23:44:55 node: IFTTT result debug, msg.payload : string[49]
+"Congratulations! You've fired the iot_alarm event"
