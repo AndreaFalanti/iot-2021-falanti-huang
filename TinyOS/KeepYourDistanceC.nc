@@ -23,7 +23,7 @@ implementation {
     message_t packet;
 
     bool locked = FALSE;
-    uint8_t counter = 0;
+    uint16_t counter = 0;
     
     bcast_map_t *map = NULL;
     
@@ -43,7 +43,7 @@ implementation {
     
     // ---------------------- MAP DATA STRUCTURE ----------------------------
 
-	bcast_map_t* createMapEl(uint16_t sender_id, uint8_t msg_counter) {
+	bcast_map_t* createMapEl(uint16_t sender_id, uint16_t msg_counter) {
 		bcast_map_t* el = (bcast_map_t*)malloc(sizeof(bcast_map_t));
 
 		// malloc fail, abort
@@ -69,7 +69,7 @@ implementation {
 	/*
 		Return true if there is the necessity to send an alarm message, false otherwise
 	*/
-	bool updateBcastMap(bcast_map_t **l, uint16_t sender_id, uint8_t msg_counter) {
+	bool updateBcastMap(bcast_map_t **l, uint16_t sender_id, uint16_t msg_counter) {
 		bcast_map_t *el = findById(*l, sender_id);
 
 		// id not present in map, insert a new element in the map
@@ -83,10 +83,10 @@ implementation {
 		}
 		// update the already existing element in the map
 		else {
-			/* cast to uint8_t is necessary to accept as consecutive message the case when last_counter = 255 (max possible value)
+			/* cast to uint16_t is necessary to accept as consecutive message the case when last_counter = 255 (max possible value)
 			 and msg_counter = 0 due to overflow */
 			// case where a consecutive message is received
-			if (el->last_counter == (uint8_t)(msg_counter - 1)) {
+			if (el->last_counter == (uint16_t)(msg_counter - 1)) {
 				el->last_counter = msg_counter;
 				el->consecutive_counter++;
 				logMessage("Counter", "Consecutive counter for mote %u: %u", sender_id, el->consecutive_counter);
